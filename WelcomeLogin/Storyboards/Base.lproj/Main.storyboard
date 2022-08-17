@@ -146,6 +146,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0JF-LU-Dds" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="maD-lg-zR5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -196,10 +197,25 @@
                     <view key="view" contentMode="scaleToFill" id="vH6-Eu-2WF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ou-wE-mBN">
+                                <rect key="frame" x="171.5" y="430" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nGd-R5-fDS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Ou-wE-mBN" firstAttribute="centerX" secondItem="vH6-Eu-2WF" secondAttribute="centerX" id="9AB-l4-Qnb"/>
+                            <constraint firstItem="7Ou-wE-mBN" firstAttribute="centerY" secondItem="vH6-Eu-2WF" secondAttribute="centerY" id="d1v-eb-bC6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cCP-Zl-ERr"/>
+                    <connections>
+                        <outlet property="hobbyTextLabel" destination="7Ou-wE-mBN" id="ngS-y3-7HB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3K-dF-V2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
