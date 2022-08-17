@@ -14,6 +14,9 @@
 		2C42045028A3DA82004C2D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C42044F28A3DA82004C2D49 /* Assets.xcassets */; };
 		2C42045328A3DA82004C2D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C42045128A3DA82004C2D49 /* LaunchScreen.storyboard */; };
 		2C42045B28A68529004C2D49 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42045A28A68529004C2D49 /* WelcomeViewController.swift */; };
+		2C42048628ACF018004C2D49 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42048528ACF018004C2D49 /* AboutMeViewController.swift */; };
+		2C42048828AD00E0004C2D49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42048728AD00E0004C2D49 /* User.swift */; };
+		2C42048A28AD2493004C2D49 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42048928AD2493004C2D49 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2C42045228A3DA82004C2D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C42045428A3DA82004C2D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C42045A28A68529004C2D49 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2C42048528ACF018004C2D49 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		2C42048728AD00E0004C2D49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C42048928AD2493004C2D49 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,35 @@
 		2C42044528A3DA81004C2D49 /* WelcomeLogin */ = {
 			isa = PBXGroup;
 			children = (
+				2C42048328ACCF2A004C2D49 /* Models */,
 				2C42044628A3DA81004C2D49 /* AppDelegate.swift */,
 				2C42044828A3DA81004C2D49 /* SceneDelegate.swift */,
-				2C42044A28A3DA81004C2D49 /* LoginViewController.swift */,
-				2C42045A28A68529004C2D49 /* WelcomeViewController.swift */,
+				2C42048428ACCF62004C2D49 /* ViewControllers */,
 				2C42044C28A3DA81004C2D49 /* Main.storyboard */,
 				2C42044F28A3DA82004C2D49 /* Assets.xcassets */,
 				2C42045128A3DA82004C2D49 /* LaunchScreen.storyboard */,
 				2C42045428A3DA82004C2D49 /* Info.plist */,
 			);
 			path = WelcomeLogin;
+			sourceTree = "<group>";
+		};
+		2C42048328ACCF2A004C2D49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C42048728AD00E0004C2D49 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C42048428ACCF62004C2D49 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C42045A28A68529004C2D49 /* WelcomeViewController.swift */,
+				2C42044A28A3DA81004C2D49 /* LoginViewController.swift */,
+				2C42048528ACF018004C2D49 /* AboutMeViewController.swift */,
+				2C42048928AD2493004C2D49 /* InfoViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C42044B28A3DA81004C2D49 /* LoginViewController.swift in Sources */,
+				2C42048628ACF018004C2D49 /* AboutMeViewController.swift in Sources */,
 				2C42045B28A68529004C2D49 /* WelcomeViewController.swift in Sources */,
+				2C42048A28AD2493004C2D49 /* InfoViewController.swift in Sources */,
+				2C42048828AD00E0004C2D49 /* User.swift in Sources */,
 				2C42044728A3DA81004C2D49 /* AppDelegate.swift in Sources */,
 				2C42044928A3DA81004C2D49 /* SceneDelegate.swift in Sources */,
 			);
